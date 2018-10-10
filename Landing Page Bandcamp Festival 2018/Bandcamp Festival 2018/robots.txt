@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /
+
+Sitemap: https://alfon2.000webhostapp.com/sitemap.xml

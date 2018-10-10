@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+	<head>
+
+		<meta charset="UTF-8">
+		<title>Snakis Home</title>
+
+        <meta name="description" content="Snakis app consigue regalos de nuestro catalogo a partir de escanear codigos de barras o qr de tus productos favoritos">
+        <meta name="keywords" content="Snakis app puntos codigos barras bar code qr escaner escanear scan catalogo regalos gifts programa fidelización">
+
+        <!-- Escalar renderizado según visor. No dejar ampliar--> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+		<!-- Oculta el nagevador web en Android (útil para WebApps)-->
+        <meta name="mobile-web-app-capable" content="yes">
+
+		<!-- Inserta el logo en nuestra página web (favicon) - Web: https://realfavicongenerator.net -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
+        <!-- Fontsawesome: Símbolos agregados (CSS) -->
+        <link href="css/fontawesome-all.css" rel="stylesheet">
+
+		
+		<!-- 1º) JQuery mobile: CSS local-->
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+		
+		<!-- CSS propio en local-->
+		<link rel="stylesheet" href="css/estilos.home.css" />
+
+		<!-- 2º) JQuery: JavaScript (enlace externo, versión desactualizada necesaria para esta versión de JQuery Mobile) -->
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+		<!-- 3º) JQuery mobile: JavaScript -->
+		<script src="js/jquery.mobile-1.4.5.js"></script>
+
+		<!-- 4º) Mi propio Javascript -->
+		<script src="js/js.js"></script>
+
+	</head>
+
+	<body>
+
+		<!--/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\-->
+
+		<div id="home" data-role="page">
+			
+			<div class="content">
+
+				<!-- HEADER -->
+	            <div data-role="header" class="header">
+	            	<a href="#creditos"><span class="fas fa-comment fa-2x"></span></a>
+	            	<h1>Home</h1>
+					<a href="#"><span class="fas fa-user-circle fa-2x"></span></a>
+	            </div>
+
+				<!-- MAIN -->
+				<div role="main" class="ui-content">
+					<h2>Puntos conseguidos</h2>
+					<button>Número de puntos</button>
+					<h2>Novedades en catálogo</h2>
+
+					<div class="ui-bar ui-bar-a">	
+								
+						<div class="historial_2">
+							<img class="historial" src="img/canjear-bebida-apolo.jpg" alt="canjear_apolo">
+							<div class="historial_3">
+								<h3>Obtén un libro de la librería Apolo</h3>
+								<a href="#"><span class="fas fa-angle-right fa-2x"></span></a>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="ui-bar ui-bar-a">	
+								
+						<div class="historial_2">
+							<img class="historial" src="img/canjear-biologico.jpg" alt="canjear_biologico">
+							<div class="historial_3">
+								<h3>Obtén un producto biológico de la tienda X</h3>
+								<a href="#"><span class="fas fa-angle-right fa-2x"></span></a>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="ui-bar ui-bar-a">	
+								
+						<div class="historial_2">
+							<img class="historial" src="img/canjear-brunch.jpg" alt="canjear_bruch">
+							<div class="historial_3">
+								<h3>Obtén un bruch al 50% de descuento</h3>
+								<a href="#"><span class="fas fa-angle-right fa-2x"></span></a>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="ui-bar ui-bar-a">	
+								
+						<div class="historial_2">
+							<img class="historial" src="img/canjear-cafe-anton.jpg" alt="canjear_cafe_anton">
+							<div class="historial_3">
+								<h3>Obtén un café gratuito en Café Anton</h3>
+								<a href="#"><span class="fas fa-angle-right fa-2x"></span></a>
+							</div>
+						</div>
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+			<!-- FOOTER -->
+			<div data-role="footer" class="footer">
+				<a href="#catalogo"><span class="fas fas fa-gift fa-2x"></span></a>
+				<a href="#"><span class="fas fa-camera fa-2x"></span></a>
+				<a href="#historial"><span class="fas fa-history fa-2x"></span></a>			
+			</div>
+            
+		</div>
+
+		<!--/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\-->
+
+		<div id="catalogo" data-role="page">
+			
+			<div class="content">
+
+				<!-- HEADER -->
+	            <div data-role="header" class="header">
+	            	<a href="#home"><span class="fas fa-arrow-alt-circle-left fa-2x"></span></a>
+	            	<h1>Catálogo</h1>
+					<a href="#"><span class="fas fa-user-circle fa-2x"></span></a>
+	            </div>
+
+				<!-- MAIN -->
+				<div role="main" class="ui-content">
+					<a href="#"><button class="ui-btn ui-btn-b">Canjea tus X puntos</button></a>
+					<div class="productos"><h2>Catálogo de productos</h2>
+						<button type="button" onclick="mostrarlin()"><span class="fas fa-bars fa-2x"></span></button>
+						<button type="button" onclick="mostrargr()"><span class="fas fa-th-large fa-2x"></span></button>
+					</div>
+
+					<!-- mostrar grid -->
+					<div id="mostrargrid">
+
+						<div class="ui-grid-a">
+
+							<!-- Columna 1 -->
+							<div class="ui-block-a">
+
+								<div class="ui-bar ui-bar-a">
+									<h3>Canjear bebida Apolo</h3>
+									<img class="catalogo" src="img/canjear-bebida-apolo.jpg" alt="canjear_apolo">
+									<button>10 Ptos</button>
+								</div>
+
+								<div class="ui-bar ui-bar-a">
+									<h3>Canjear biológico</h3>
+									<img class="catalogo" src="img/canjear-biologico.jpg" alt="canjear_biologico">
+									<button>15 Ptos</button>
+								</div>
+
+								<div class="ui-bar ui-bar-a">
+									<h3>Canjear brunch</h3>
+									<img class="catalogo" src="img/canjear-brunch.jpg" alt="canjear_brunch">
+									<button>20 Ptos</button>
+								</div>
+
+								<div class="ui-bar ui-bar-a">
+									<h3>Canjear café anton</h3>
+									<img class="catalogo" src="img/canjear-cafe-anton.jpg" alt="canjear_cafe_anton">
+									<button>5 Ptos</button>
+								</div>
+
+								<div class="ui-bar ui-bar-a">
+									<h3>Canjear café neutral</h3>
+									<img class="catalogo" src="img/canjear-cafe-neutral.jpg" alt="canjear_cafe_neutral">
+									<button>5 Ptos</button>
+								</div>
+
+							</div>
+
+							<!-- Columna 2 -->
+							<div class="ui-block-b">
+
+								<div class="ui-bar ui-bar-a">
+									<h3>Canjear café regalo</h3>
+									<img class="catalogo" src="img/canjear-caja-regalo.jpg" alt="canjear_cafe_regalo">
+									<button>5 Ptos</button>
+								</div>
+
+								<div class="ui-bar ui-bar-a">
+									<h3>Canjear flax &amp; kale</h3>
+									<img class="catalogo" src="img/canjear-flax-and-kale.jpg" alt="canjear_flax_kale">
+									<button>15 Ptos</button>
+								</div>
+
+								<div class="ui-bar ui-bar-a">
+									<h3>Canjear masa madre</h3>
+									<img class="catalogo" src="img/canjear-masa-madre.jpg" alt="canjear_masa_madre">
+									<button>10 Ptos</button>
+								</div>
+
+								<div class="ui-bar ui-bar-a">
+									<h3>Canjear tetería</h3>
+									<img class="catalogo" src="img/canjear-teteria.jpg" alt="canjear_tetería">
+									<button>10 Ptos</button>
+								</div>
+
+								<div class="ui-bar ui-bar-a">
+									<h3>Canjear vegetariano</h3>
+									<img class="catalogo" src="img/canjear-vegetariano.jpg" alt="canjear_vegetariano">
+									<button>15 Ptos</button>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div><!-- FIN mostrar-->
+
+
+					<!-- mostrar lineal -->
+					<div id="mostrarlineal">
+
+						<div class="ui-grid-a">
+
+							<div class="ui-bar ui-bar-a">
+								<div class="catalogo">
+									<h3>Canjear bebida Apolo</h3>
+									<img class="catalogo2" src="img/canjear-bebida-apolo.jpg" alt="canjear_apolo">
+								</div>
+								<button>10 Ptos</button>
+							</div>
+
+							<div class="ui-bar ui-bar-a">
+								<div class="catalogo">
+									<h3>Canjear biológico</h3>
+									<img class="catalogo2" src="img/canjear-biologico.jpg" alt="canjear_biologico">
+								</div>
+								<button>15 Ptos</button>
+							</div>
+
+							<div class="ui-bar ui-bar-a">
+								<div class="catalogo">
+									<h3>Canjear brunch</h3>
+									<img class="catalogo2" src="img/canjear-brunch.jpg" alt="canjear_brunch">
+								</div>
+								<button>20 Ptos</button>
+							</div>
+
+							<div class="ui-bar ui-bar-a">
+								<div class="catalogo">
+									<h3>Canjear café anton</h3>
+									<img class="catalogo2" src="img/canjear-cafe-anton.jpg" alt="canjear_cafe_anton">
+								</div>
+								<button>5 Ptos</button>
+							</div>
+
+							<div class="ui-bar ui-bar-a">
+								<div class="catalogo">
+									<h3>Canjear café neutral</h3>
+									<img class="catalogo2" src="img/canjear-cafe-neutral.jpg" alt="canjear_cafe_neutral">
+								</div>
+								<button>5 Ptos</button>
+							</div>
+
+							<div class="ui-bar ui-bar-a">
+								<div class="catalogo">
+									<h3>Canjear café regalo</h3>
+									<img class="catalogo2" src="img/canjear-caja-regalo.jpg" alt="canjear_cafe_regalo">
+								</div>
+								<button>5 Ptos</button>
+							</div>
+
+							<div class="ui-bar ui-bar-a">
+								<div class="catalogo">
+									<h3>Canjear flax &amp; kale</h3>
+									<img class="catalogo2" src="img/canjear-flax-and-kale.jpg" alt="canjear_flax_kale">
+								</div>
+								<button>15 Ptos</button>
+							</div>
+
+							<div class="ui-bar ui-bar-a">
+								<div class="catalogo">
+									<h3>Canjear masa madre</h3>
+									<img class="catalogo2" src="img/canjear-masa-madre.jpg" alt="canjear_masa_madre">
+								</div>
+								<button>10 Ptos</button>
+							</div>
+
+							<div class="ui-bar ui-bar-a">
+								<div class="catalogo">
+									<h3>Canjear tetería</h3>
+									<img class="catalogo2" src="img/canjear-teteria.jpg" alt="canjear_tetería">
+								</div>
+								<button>10 Ptos</button>
+							</div>
+
+							<div class="ui-bar ui-bar-a">
+								<div class="catalogo">
+									<h3>Canjear vegetariano</h3>
+									<img class="catalogo2" src="img/canjear-vegetariano.jpg" alt="canjear_vegetariano">
+								</div>
+								<button>15 Ptos</button>
+							</div>
+
+						</div>
+
+					</div><!-- FIN mostrar-->
+
+				</div>
+
+			</div>
+
+			<!-- FOOTER -->
+			<div data-role="footer" class="footer">
+				<a href="#catalogo"><span class="fas fas fa-gift fa-2x"></span></a>
+				<a href="#"><span class="fas fa-camera fa-2x"></span></a>
+				<a href="#historial"><span class="fas fa-history fa-2x"></span></a>			
+			</div>
+            
+		</div>
+
+		<!--/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\-->
+
+		<div id="historial" data-role="page">
+			
+			<div class="content">
+
+				<!-- HEADER -->
+	            <div data-role="header" class="header">
+	            	<a href="#home"><span class="fas fa-arrow-alt-circle-left fa-2x"></span></a>
+	            	<h1>Historial</h1>
+					<a href="#"><span class="fas fa-user-circle fa-2x"></span></a>
+	            </div>
+
+				<!-- MAIN -->
+				<div role="main" class="ui-content">
+					
+					<h2>Total calorías</h2>
+					<img class="catalogo" src="img/graficos.png" alt="graficos">
+
+					<div class="productos"><h2>Productos consumidos</h2>
+						<button type="button" onclick="mostrarlin2()"><span class="fas fa-bars fa-2x"></span></button>
+						<button type="button" onclick="mostrargr2()"><span class="fas fa-th-large fa-2x"></span></button>
+					</div>
+
+
+					<!-- mostrar grid -->
+					<div id="mostrargrid2">
+					
+						<div class="ui-grid-a">
+
+							<!-- Columna 1 -->
+							<div class="ui-block-a">
+
+								<div class="ui-bar ui-bar-a">
+		
+									<div class="historial_3">
+										<img class="historial" src="img/snakis-bombon-chocolate-negro.jpg" alt="snakis_bombon_chocolate_negro">
+										<h3>Bombón chocolate negro</h3>
+										<a href="#"><span class="fas fa-angle-right fa-3x"></span></a>
+									</div>
+				
+								</div>
+
+								<div class="ui-bar ui-bar-a">	
+									
+									<div class="historial_3">
+										<img class="historial" src="img/snakis-bombon-relleno.jpg" alt="snakis_bombon_relleno">
+										<h3>Bombón relleno</h3>
+										<a href="#"><span class="fas fa-angle-right fa-3x"></span></a>
+									</div>
+									
+								</div>
+
+								<div class="ui-bar ui-bar-a">	
+								
+									<div class="historial_3">
+										<img class="historial" src="img/snakis-canela-choco.jpg" alt="snakis_canela_choco">
+										<h3>Canela choco</h3>
+										<a href="#"><span class="fas fa-angle-right fa-3x"></span></a>
+									</div>
+										
+								</div>
+
+							</div>
+
+							<!-- Columna 2 -->
+							<div class="ui-block-b">
+
+								<div class="ui-bar ui-bar-a">	
+									
+									<div class="historial_3">
+										<img class="historial" src="img/snakis-cupcakes-pexels.jpg" alt="snakis_bombon_chocolate_negro">
+										<h3>Cupcakes pexels</h3>
+										<a href="#"><span class="fas fa-angle-right fa-3x"></span></a>
+									</div>
+									
+								</div>
+
+								<div class="ui-bar ui-bar-a">	
+									
+									<div class="historial_3">
+										<img class="historial" src="img/snakis-mini-cupcakes.jpg" alt="snakis_bombon_chocolate_negro">
+										<h3>Mini cupcakes</h3>
+										<a href="#"><span class="fas fa-angle-right fa-3x"></span></a>
+									</div>
+									
+								</div>
+
+							</div>
+
+
+						</div>
+
+					</div><!--FIN mostrar-->
+
+
+					<!-- mostrar lineal -->
+					<div id="mostrarlineal2">
+					
+						<div class="ui-grid">
+
+							<!-- Columna 1 -->
+							<div class="ui-block-a">
+
+								<div class="ui-bar ui-bar-a">
+		
+									<div class="historial_2">
+										<img class="historial" src="img/snakis-bombon-chocolate-negro.jpg" alt="snakis_bombon_chocolate_negro">
+										<h3>Bombón chocolate negro</h3>
+										<a href="#"><span class="fas fa-angle-right fa-3x"></span></a>
+									</div>
+				
+								</div>
+
+								<div class="ui-bar ui-bar-a">	
+									
+									<div class="historial_2">
+										<img class="historial" src="img/snakis-bombon-relleno.jpg" alt="snakis_bombon_relleno">
+										<h3>Bombón relleno</h3>
+										<a href="#"><span class="fas fa-angle-right fa-3x"></span></a>
+									</div>
+									
+								</div>
+
+								<div class="ui-bar ui-bar-a">	
+								
+									<div class="historial_2">
+										<img class="historial" src="img/snakis-canela-choco.jpg" alt="snakis_canela_choco">
+										<h3>Canela choco</h3>
+										<a href="#"><span class="fas fa-angle-right fa-3x"></span></a>
+									</div>
+										
+								</div>
+
+								<div class="ui-bar ui-bar-a">	
+									
+									<div class="historial_2">
+										<img class="historial" src="img/snakis-cupcakes-pexels.jpg" alt="snakis_bombon_chocolate_negro">
+										<h3>Cupcakes pexels</h3>
+										<a href="#"><span class="fas fa-angle-right fa-3x"></span></a>
+									</div>
+									
+								</div>
+
+								<div class="ui-bar ui-bar-a">	
+									
+									<div class="historial_2">
+										<img class="historial" src="img/snakis-mini-cupcakes.jpg" alt="snakis_bombon_chocolate_negro">
+										<h3>Mini cupcakes</h3>
+										<a href="#"><span class="fas fa-angle-right fa-3x"></span></a>
+									</div>
+									
+								</div>
+
+
+							</div>
+
+
+						</div><!--FIN mostrar-->
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- FOOTER -->
+			<div data-role="footer" class="footer">
+				<a href="#catalogo"><span class="fas fas fa-gift fa-2x"></span></a>
+				<a href="#"><span class="fas fa-camera fa-2x"></span></a>
+				<a href="#historial"><span class="fas fa-history fa-2x"></span></a>			
+			</div>
+            
+		</div>
+
+		<!--/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\-->
+
+		<div id="creditos" data-role="page">
+			
+			<div class="content">
+
+				<!-- HEADER -->
+	            <div data-role="header" class="header">
+	            	<a href="#home"><span class="fas fa-arrow-alt-circle-left fa-2x"></span></a>
+	            	<h1>Créditos</h1>
+					<a href="#"><span class="fas fa-user-circle fa-2x"></span></a>
+	            </div>
+
+				<!-- MAIN -->
+				<div class="creditos" role="main" class="ui-content">
+					<h2>Designed by Alfon</h2>
+					<img src="img/snakis_logo.svg" alt="snakis logo">
+					<h2>Versión 1.0</h2>
+					<span class="fab fa-android fa-2x fa-spin"></span>
+				</div>
+
+			</div>
+
+			<!-- FOOTER -->
+			<div data-role="footer" class="footer">
+				<a href="#catalogo"><span class="fas fas fa-gift fa-2x"></span></a>
+				<a href="#"><span class="fas fa-camera fa-2x"></span></a>
+				<a href="#historial"><span class="fas fa-history fa-2x"></span></a>			
+			</div>
+            
+		</div>
+
+
+		<!--/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\-->
+
+	</body>
+
+</html>

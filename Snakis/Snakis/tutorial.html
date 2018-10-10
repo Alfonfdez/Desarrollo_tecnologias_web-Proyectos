@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+	<head>
+
+		<meta charset="UTF-8">
+		<title>Snakis Tutorial</title>
+
+        <meta name="description" content="Snakis app consigue regalos de nuestro catalogo a partir de escanear codigos de barras o qr de tus productos favoritos">
+        <meta name="keywords" content="Snakis app puntos codigos barras bar code qr escaner escanear scan catalogo regalos gifts programa fidelización">
+
+        <!-- Escalar renderizado según visor. No dejar ampliar --> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+		<!-- Oculta el nagevador web en Android (útil para WebApps) -->
+        <meta name="mobile-web-app-capable" content="yes">
+
+		<!-- Inserta el logo en nuestra página web (favicon) - Web: https://realfavicongenerator.net -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
+        <!-- Fontsawesome: Símbolos agregados (CSS) -->
+        <link href="css/fontawesome-all.css" rel="stylesheet">
+
+		
+		<!-- 1º) bxSlider: CSS - local -->
+		<link rel="stylesheet" href="css/jquery.bxslider.css">
+
+		<!-- CSS propio en local-->
+		<link rel="stylesheet" href="css/estilos.tutorial.css">
+
+		<!-- 2º) JQuery: JavaScript - local -->
+		<script src="js/jquery-3.3.1.js"></script>
+
+		<!-- 1º) bxSlider: JavaScript - local -->
+		<script src="js/jquery.bxslider.min.js"></script>
+
+
+		<script>
+
+			$(document).ready(function(){
+  				
+  				$('.bxslider').bxSlider({
+  					mode: 'fade',
+  					infiniteLoop: false,
+  					hideControlOnEnd: true,
+  					auto: true,
+  					pause: 8000
+  				});
+
+			});
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<ul class="bxslider">
+
+		  <li><img src="img/tutorial_shopping.jpg" alt="shopping"><p>Compra tus productos favoritos</p></li>
+		  <li><img src="img/tutorial_scan.jpg" alt="scan"><p>Escanea el código en el interior</p></li>
+		  <li><img src="img/tutorial_gift.jpg" alt="gift"><p>Intercambia los puntos obtenidos por regalos de nuestro catálogo</p><div id="link"><a href="home.html">Entendido</a></div></li>
+
+		</ul>
+
+		
+	</body>
+
+</html>

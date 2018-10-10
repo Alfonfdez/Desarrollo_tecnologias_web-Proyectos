@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_login"
+        android:textSize="30sp"
+        android:textColor="@color/colorBlack"/>
+
+    <ImageView
+        android:layout_marginTop="20sp"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:src="@drawable/ghiblilogo"/>
+
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/email"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/email"
+            android:layout_marginLeft="5sp"
+            style= "@android:style/TextAppearance.Medium"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:text=""
+            android:layout_marginRight="5sp"
+            style= "@android:style/TextAppearance.Medium"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/password"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/lock"
+            android:layout_marginLeft="5sp"
+            style= "@android:style/TextAppearance.Medium"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:text=""
+            android:layout_marginRight="5sp"
+            style= "@android:style/TextAppearance.Medium"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBlue"
+        style= "@android:style/TextAppearance.Medium"/>
+
+    <TextView
+        android:layout_marginTop="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitle_website"
+        style= "@android:style/TextAppearance.Large"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/tv_website"
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/website"
+        android:textColor="@color/colorBlue"
+        style= "@android:style/TextAppearance.Medium" />
+
+</LinearLayout>

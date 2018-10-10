@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Edicion">
+
+    <TextView
+        android:layout_marginBottom="80sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_edit"
+        android:textSize="30sp"
+        android:textColor="@color/colorBlack"/>
+
+    <CheckBox
+        android:text="@string/preference_favourite"
+        android:id="@+id/ch_favourite_pref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:textStyle="bold"
+        style= "@android:style/TextAppearance.Medium"/>
+
+    <LinearLayout
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:text="@string/preference_comment"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            style= "@android:style/TextAppearance.Medium"/>
+
+        <EditText
+            android:id="@+id/et_comment_pref"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/preference_comment_hint"
+            style= "@android:style/TextAppearance.Medium"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:text="@string/preference_picture"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            style= "@android:style/TextAppearance.Medium"/>
+
+        <EditText
+            android:id="@+id/et_picture_pref"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/preference_picture_hint"
+            style= "@android:style/TextAppearance.Medium"/>
+
+    </LinearLayout>
+
+    <Button
+        android:text="@string/save"
+        android:id="@+id/btn_guardar_pref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBlue"
+        style= "@android:style/TextAppearance.Medium"/>
+
+
+</LinearLayout>

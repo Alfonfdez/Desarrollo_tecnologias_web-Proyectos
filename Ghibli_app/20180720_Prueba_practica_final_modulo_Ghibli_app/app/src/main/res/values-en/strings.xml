@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Ghibli app</string>
+    <string name="title_login">Log in</string>
+    <string name="subtitle_website">Website</string>
+    <string name="title_list">Movie list</string>
+    <string name="subtitle_year">Year</string>
+    <string name="title_detail">Movie details</string>
+    <string name="subtitle_detail">Movie preferences</string>
+    <string name="title_edit">Preferences edit</string>
+    <string name="action_bar_edit">Edit</string>
+    <string name="action_bar_exit">Exit</string>
+    <string name="email">Email</string>
+    <string name="email_hint">Type your email</string>
+    <string name="password">Password</string>
+    <string name="password_hint">Type your password</string>
+    <string name="login">Login</string>
+    <string name="website"><u>https://www.studioghibli.com.au</u></string>
+    <string name="toast_login">Email field and password field cannot be empty</string>
+    <string name="toast_login_email">Email field cannot be empty</string>
+    <string name="toast_login_password">Password field cannot be empty</string>
+    <string name="progress_dialog_loading">Loading. Wait please&#8230;</string>
+    <string name="progress_dialog_no_internet">NO Internet connection</string>
+    <string name="film_identifier">ID</string>
+    <string name="film_title">Title</string>
+    <string name="film_description">Description</string>
+    <string name="film_director">Director</string>
+    <string name="film_producer">Producer</string>
+    <string name="film_release_date">Release date</string>
+    <string name="film_rt_score">Score</string>
+    <string name="preference_favourite">Favourite movie</string>
+    <string name="preference_comment">Comments</string>
+    <string name="preference_comment_hint">Type your comment</string>
+    <string name="preference_picture">Url image</string>
+    <string name="preference_picture_hint">Type your image´s url</string>
+    <string name="save">Save</string>
+</resources>

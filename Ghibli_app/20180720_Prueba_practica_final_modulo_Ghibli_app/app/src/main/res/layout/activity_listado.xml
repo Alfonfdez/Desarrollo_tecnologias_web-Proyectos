@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Listado">
+
+    <TextView
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_list"
+        android:textSize="30sp"
+        android:textColor="@color/colorBlack"/>
+
+    <LinearLayout
+        android:layout_marginTop="40sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/film_title"
+            style= "@android:style/TextAppearance.Large"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlue"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/subtitle_year"
+            style= "@android:style/TextAppearance.Large"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlue"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

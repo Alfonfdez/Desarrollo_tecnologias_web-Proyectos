@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Ghibli app</string>
+    <string name="title_login">Inicio de sesión</string>
+    <string name="subtitle_website">Página web</string>
+    <string name="title_list">Listado de películas</string>
+    <string name="subtitle_year">Año</string>
+    <string name="title_detail">Película al detalle</string>
+    <string name="subtitle_detail">Preferencia de la película</string>
+    <string name="title_edit">Edición de las preferencias</string>
+    <string name="action_bar_edit">Editar</string>
+    <string name="action_bar_exit">Salir</string>
+    <string name="email">Correo electrónico</string>
+    <string name="email_hint">Introduzca su correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="password_hint">Introduzca su contraseña</string>
+    <string name="login">Entrar</string>
+    <string name="website"><u>https://www.studioghibli.com.au</u></string>
+    <string name="toast_login">El campo correo electrónico y contraseña no pueden estar vacíos</string>
+    <string name="toast_login_email">El campo correo electrónico no puede estar vacío</string>
+    <string name="toast_login_password">El campo contraseña no puede estar vacío</string>
+    <string name="progress_dialog_loading">Cargando. Espera por favor&#8230;</string>
+    <string name="progress_dialog_no_internet">NO hay conexión a Internet</string>
+    <string name="film_identifier">ID</string>
+    <string name="film_title">Título</string>
+    <string name="film_description">Descripción</string>
+    <string name="film_director">Director</string>
+    <string name="film_producer">Productor</string>
+    <string name="film_release_date">Fecha de lanzamiento</string>
+    <string name="film_rt_score">Puntuación</string>
+    <string name="preference_favourite">Película favorita</string>
+    <string name="preference_comment">Comentarios</string>
+    <string name="preference_comment_hint">Introduzca su comentario</string>
+    <string name="preference_picture">Url imagen</string>
+    <string name="preference_picture_hint">Introduzca su url para la imagen</string>
+    <string name="save">Guardar</string>
+</resources>
